@@ -2,7 +2,7 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 
-const sequelize = require('./config/connection)
+const sequelize = require('./config/connection');
 const path = require('path');
 
 const app = express();
