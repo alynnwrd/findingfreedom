@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+    integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js\script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title> Resume Builder </title>
+</head>
+
+<body>
+
+<div class = "container" id= "pageOne">
+  <form class="pure-form pure-form-aligned page1">
+    <fieldset>
+      <div class="pure-control-group">
+        <label for="first-name"> First Name </label>
+        <input type="text" id="first-name" placeholder="First Name" />
+      </div>
+      <div class="pure-control-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Last Name" />
+      </div>
+        <div class="pure-control-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Email Address" />
+      </div>
+      <div class="pure-control-group">
+            <label for="phone-number">Phone Number</label>
+            <input type="text" id="phone" placeholder="(000-000-0000)" />
+      </div>
+      <div class="pure-control-group">
+        <label for="address">Street Address </label>
+        <input type="text" id="multi-city" placeholder="Street Address" />
+    </div>
+      <div class="pure-control-group">
+        <label for="multi-city">City</label>
+        <input type="text" id="multi-city" placeholder="City" />
+    </div>
+    <div class="pure-control-group">
+        <label for="state">State</label>
+        <input type="text" id="city" placeholder="state">
+    </div>
+    <div class="pure-control-group">
+        <label for="zip">Zip Code </label>
+        <input type="text" id="zip" placeholder="Zip Code" />
+     
+     <button type="submit" id= "next-btn" class="pure-button pure-button-primary next-btn">Submit</button>
+    </div>
+  </fieldset>
+</form>
+</div>
+
+
+<div class = "container" id= "pageTwo">
+<form class="pure-form pure-form-aligned page2">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="job-title">Job Title</label>
+            <input type="text" id="job-title" placeholder="job title" />
+            </div>
+
+        <div class="pure-control-group">
+            <label for ="Employer">Employer</label>
+            <input type="text" id="employer" placeholder="Employer" />
+        </div>
+
+        <div class="pure-control-group">
+            <label for ="startDate">Start Date</label>
+            <input type="text" id="startDate" placeholder="start date" />
+        </div>
+
+        <div class="pure-controls">
+            <label for="aligned-cb" class="pure-checkbox">
+                <input type="checkbox" id="employed" /> Is this your current employer? 
+            </label>
+        </div>
+
+        <div class="pure-control-group">
+            <label for ="endDate">End Date </label>
+            <input type="text" id="endDate" placeholder="end date if applicable" />
+        </div>
+       
+       <div class="pure-control-group">
+            <label for="aligned-cb" class="pure-checkbox">
+                <input type="checkbox" id="reference" /> Would this company be a good reference?
+            </label>
+        </div> 
+        <a href="#open-modal">Open Modal</a>
+        <button class="ui button" type="submit">Submit</button>
+    </fieldset>
+</form>
+</div>
+
+<div class = "container" id= "pageThree">
+<form class="pure-form pure-form-aligned page3">
+    <fieldset>
+        <fieldset class="pure-group">
+            <input type="text" class="pure-input-1-2" placeholder="Professional Skills " />
+            <textarea class="pure-input-1-2" placeholder="What are some skills you have gained through 
+            proffesional work settings? "></textarea>
+        </fieldset>
+    </form>
+    <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Personal Skills" />
+        <textarea class="pure-input-1-2" placeholder="Please tell us about some personal skills, hobbies, languages ext."></textarea>
+    </fieldset>
+    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Submit</button>
+    </form>
+  </fieldset>
+</form>
+</div>
+
+</body>
+</html>
