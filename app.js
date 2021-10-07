@@ -32,8 +32,8 @@ app.use(session(sess));
 app.engine('hbs', exphbs({
   defaultLayout: 'main',
   extname: '.hbs'
+ 
 }));
-
 app.set('view engine', 'hbs');
 
 // Create the Handlebars.js engine object with custom helper functions
