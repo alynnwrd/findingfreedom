@@ -8,8 +8,8 @@ router.get('/', async (req, res) => {
   res.render("homepage.hbs");
 });
 
-router.get('/register', async (req, res) => {
-  res.render("register.hbs");
-});
+
+
+
 
 module.exports = router;

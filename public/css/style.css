@@ -1,25 +1,57 @@
-*, *::before, *::after { 
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    display:flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    width: 800px;
-    max-width: 80%;
-    border-radius: 5px;
-    background-color: beige;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
+  width: 800px;
+  max-width: 80%;
+  border-radius: 5px;
+  background-color: beige;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
 }
 
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+.welcomeImage {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.Title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
