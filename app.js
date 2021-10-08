@@ -8,6 +8,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const path = require("path");
 const routes = require('./controllers');
+const hbs = exphbs.create({});
 
 //helper
 //const helpers = require('./');
@@ -29,13 +30,8 @@ const sess = {
 
 app.use(session(sess));
 
-app.engine('hbs', exphbs({
-  defaultLayout: 'main',
-  extname: '.hbs'
- 
-}));
-app.set('view engine', 'hbs');
-
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 // Create the Handlebars.js engine object with custom helper functions
 /*const hbs = exphbs.create({ helpers });
 
