@@ -5,10 +5,20 @@ const sequelize = require("../config/connection");
 //home route get.
 router.get('/', async (req, res) => {
   
-  res.render("homepage.hbs");
+  res.render("homepage");
+});
+
+router.get('/login', async (req, res) => {
+  
+  
+  res.render("login");
 });
 
 
+router.get('/signup', async (req, res) => {
+  
+  res.render("register");
+});
 
 
 
