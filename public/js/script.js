@@ -1,4 +1,4 @@
-const nextButton = document.getElementById('next-btn')
+/*const nextButton = document.getElementById('next-btn')
 const firstBox = document.get.getElementById ('page1')
 
 nextButton.addEventListener('click', nextPage)
@@ -14,4 +14,4 @@ const getNotes = () =>
     headers: {
       'Content-Type': 'application/json',
     },
-  });
+  });*/

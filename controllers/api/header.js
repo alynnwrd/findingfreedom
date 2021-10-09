@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
 });
 
 //update
-router.put('/:id', async (req, res) => {
+/*router.put('/:id', async (req, res) => {
   // TODO: Where is this action method sending the data from the body of the fetch request? Why?
   try {
     const headerUpdate = await Header.update(
@@ -48,6 +48,6 @@ router.put('/:id', async (req, res) => {
   } catch (err) {
       res.status(500).json(err);
     };
-});
+});*/
 
 module.exports = router;
