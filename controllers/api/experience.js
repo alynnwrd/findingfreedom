@@ -14,14 +14,12 @@ router.post("/", async (req, res) => {
     //get the id, input value
     //check the table row names
     const newExperience = await Experience.create({
-      firstName: req.body.userFirstNameInput,
-      lastName: req.body.userLastNameInput,
-      address: req.body.userAddressInput,
-      city: req.body.userCityInput,
-      state: req.body.userStateInput,
-      zipCode: req.body.userZipInput,
-      phone: req.body.userPhoneInput,
-      email: req.body.userEmailInput,
+        jobTitle : req.body.userJobTitleInput,
+        employer: req.body.userEmployerInput,
+        city: req.body.userCityInput,
+        state: req.body.userStateInput,
+        startDate: req.body.userStartDateInput,
+        endDate: req.body.userEndDateInput,
     });
     res.status(200).json(newExperience);
   } catch (err) {

@@ -4,14 +4,14 @@ const { Education } = require('../models');
   {
     schoolName: "Stanford University",
     location: "California",
-    degree: "Electrical Engineer",
+    degree: "Dev",
     graduateData: "05/01/23",
  
   },
   {
     schoolName: "Harvard University",
     location: "Massachusetts",
-    degree: "Electrical Engineer",
+    degree: "Engineer",
     graduateData: "05/01/23",
  
   },
