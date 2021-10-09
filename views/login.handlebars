@@ -1,16 +1,23 @@
-<form action="/register" method="POST" style="width: 100%; background-color:cornsilk">
-    <div>
-        <lebel for="name">Name</lebel>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <lebel for="email">Email</lebel>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <lebel for="password">Password</lebel>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">Sign Up</button>
-    <a href="/login">Login</a>
+<form class="border p-2 mx-6 mt-2 flex-col" style="background-color: cornsilk;">
+  <h2>Login</h2>
+  <label for="username">UserName</label><br />
+  <input
+    class="bg-gray-200 focus:bg-white text-black"
+    type="text"
+    id="username"
+    name="username"
+  /><br />
+  <label for="password">Password</label><br />
+  <input
+    class="bg-gray-200 focus:bg-white text-black"
+    type="password"
+    id="password"
+    name="password"
+  /><br />
+  <button
+    type="submit"
+    class="mt-3 w-32 rounded-md third hover:bg-red-700 text-white"
+    id="loginBtn"
+  >Login</button>
+  <a href="/signup">Sign-UP</a>
 </form>
