@@ -1,13 +1,14 @@
-const reviewForm = document.getElementById("review");
+const reviewForm = document.getElementById("experience");
 
 reviewForm.addEventListener("submit", (e) => {
     e.preventDefault();
         const userJobTitleInput = document.getElementById('userJobTitle').value;
         const userEmployerInput = document.getElementById('userEmployer').value;
+        const userCityInput = document.getElementById('userCity').value;
+        const userStateInput = document.getElementById('userState').value;
         const userStartDateInput = document.getElementById('userStartDate').value;
-        const userStartDateInput = document.getElementById('userEdStartDate').value;
         const userEndDateInput = document.getElementById('userEndDate').value;
-        const userGoodContactInput = document.getElementById('userGoodContact').value;
+        console.log("job title", userJobTitleInput);
     fetch("/api/experience", {
         method: "POST",
         headers: {
@@ -15,11 +16,11 @@ reviewForm.addEventListener("submit", (e) => {
             },
             body: JSON.stringify({
                 userJobTitleInput, 
-                userEmployerInput, 
+                userEmployerInput,
+                userCityInput,
+                userStateInput,
                 userStartDateInput, 
-                userCurrentEmployerInput, 
-                userEndDateInput, 
-                userGoodContactInput
+                userEndDateInput
             }),
         })
 
