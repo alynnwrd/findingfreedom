@@ -12,14 +12,11 @@ router.post("/", async (req, res) => {
   try {
     //get the id, input value
     const newHeader = await Header.create({
-      firstName: req.body.userFirstNameInput,
-      lastName: req.body.userLastNameInput,
-      address: req.body.userAddressInput,
-      city: req.body.userCityInput,
-      state: req.body.userStateInput,
-      zipCode: req.body.userZipInput,
-      phone: req.body.userPhoneInput,
-      email: req.body.userEmailInput,
+      degree: req.body.userDesiredDegreeInput,
+      schoolName: req.body.userInstituteInput,
+      location: req.body.userLocationInput,
+      startDate: req.body.userEdStartDateInput,
+      graduateData: req.body.userEdEndDateInput,
     });
     res.status(200).json(newHeader);
   } catch (err) {

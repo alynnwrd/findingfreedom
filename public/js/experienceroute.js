@@ -1,4 +1,4 @@
-const reviewForm = document.getElementById("submit");
+const reviewForm = document.getElementById("experience");
 
 reviewForm.addEventListener("submit", (e) => {
     e.preventDefault();

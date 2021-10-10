@@ -11,6 +11,10 @@ Education.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    degree: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     schoolName: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -19,7 +23,7 @@ Education.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    degree: {
+    startDate: {
       type: DataTypes.STRING,
       allowNull: false,
     },
