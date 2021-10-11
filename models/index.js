@@ -3,6 +3,7 @@ const Experience = require('./Experience');
 const User = require('./User');
 const Education = require('./Education')
 const Skills = require('./skills')
+const express = require('express');
 //const bcrypt = require('bcrypt');
 
 //create association
@@ -21,5 +22,19 @@ LEFT JOIN User ON Education.id=User.id;
 SELECT *
 FROM Skills,
 LEFT JOIN User ON Skills.id=User.id
+
+
+// Initialize App
+const app = express();
+
+// Assign route
+app.use('/', (req, res, next) => {
+    res.render('resume.pug', {Header, Experience, Education, Skills});
+});
+
+// Start server
+app.listen(3306, () => {
+    console.log('App listening on port 3306');
+});
 
 module.exports = { Header, User, Experience, Education};
