@@ -10,6 +10,11 @@ router.get('/', async (req, res) => {
   
 });
 
+router.get('/public/html/support.html', async (req, res) => {
+  res.render("support.html")
+
+});
+
 router.get('/login', async (req, res) => {
   
   
