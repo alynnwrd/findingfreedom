@@ -1,11 +1,11 @@
 
-
-const reviewForm = document.getElementById("review");
+const reviewForm = document.getElementById("skill-btn");
 
 reviewForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const userProfessionalSkillsInput = document.getElementById('userProfessionalSkills').value;
-    const userPersonalSkillsInput = document.getElementById('userPersonalSkills').value;
+    const userSkillsInput = document.getElementById('skill').value;
+    const skillDescriptionInput = document.getElementById('skillDisc').value;
+
             
 fetch("/api/skills", {
     method: "POST",
@@ -13,8 +13,13 @@ fetch("/api/skills", {
         "Content-Type": "application/json",
         },
     body: JSON.stringify({
+<<<<<<< HEAD:public/js/skills.js
+        userSkillsInput
+        skillDescriptionInput
+=======
         userProfessionalSkillsInput, 
         userPersonalSkillsInput, 
+>>>>>>> 8b99faf5be67d9a0c4eec78796cabdb7b4202d0b:public/js/skillsroute.js
     }),
 })
         

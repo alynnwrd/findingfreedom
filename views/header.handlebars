@@ -1,41 +1,47 @@
-  <div class="card" id="card-1 header" data-id='1' onsubmit="showScreen('card-2')" style="display: block;">
-        <form class="pure-form pure-form-aligned page1">
-        <fieldset>
-          <div class="pure-control-group">
-            <label for="first-name"></label>
-            <input type="text" id="userFirst" placeholder="First Name" />
-          </div>
-          <div class="pure-control-group">
-            <label for="last-name"></label>
-            <input type="text" id="userLast" placeholder="Last Name" />
-          </div>
-          <div class="pure-control-group">
-            <label for="email"></label>
-            <input type="email" id="userEmail" placeholder="Email Address" />
-          </div>
-          <div class="pure-control-group">
-            <label for="phone-number"></label>
-            <input type="text" id="userPhone" placeholder="(000-000-0000)" />
-          </div>
-          <div class="pure-control-group">
-            <label for="address"></label>
-            <input type="text" id="userAddress" placeholder="Street Address" />
-          </div>
-          <div class="pure-control-group">
-            <label for="multi-city"></label>
-            <input type="text" id="userCity" placeholder="City" />
-          </div>
-          <div class="pure-control-group">
-            <label for="state"></label>
-            <input type="text" id="userState" placeholder="state" />
-          </div>
-          <div class="pure-control-group">
-            <label for="zip"></label>
-            <input type="text" id="userZip" placeholder="Zip Code" />
-          </div>
-          <div><button type="submit" class="pure-button pure-button-primary" id= "start-btn">Submit</button></div>
-          
-        </fieldset>
-      </form>
-    </div>
-<script src="/js/headerroutes.js"></script>
+<header> hi </header>
+<div class="container" id="header">
+  <form class="pure-form pure-form-aligned page1">
+    <fieldset>
+      <div class="pure-control-group">
+        <label for="first-name"></label>
+        <input type="text" id="userFirst" placeholder="First Name" />
+      </div>
+      <div class="pure-control-group">
+        <label for="last-name"></label>
+        <input type="text" id="userLast" placeholder="Last Name" />
+      </div>
+      <div class="pure-control-group">
+        <label for="email"></label>
+        <input type="email" id="userEmail" placeholder="Email Address" />
+      </div>
+      <div class="pure-control-group">
+        <label for="phone-number"></label>
+        <input type="text" id="userPhone" placeholder="(000-000-0000)" />
+      </div>
+      <div class="pure-control-group">
+        <label for="address"></label>
+        <input type="text" id="userAddress" placeholder="Street Address" />
+      </div>
+      <div class="pure-control-group">
+        <label for="multi-city"></label>
+        <input type="text" id="userCity" placeholder="City" />
+      </div>
+      <div class="pure-control-group">
+        <label for="state"></label>
+        <input type="text" id="userState" placeholder="state" />
+      </div>
+      <div class="pure-control-group">
+        <label for="zip"></label>
+        <input type="text" id="userZip" placeholder="Zip Code" />
+
+        <button
+          type="submit"
+          id="review"
+          class="pure-button pure-button-primary next-btn"
+          on click='education()'
+        >Submit</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+<script src="/js/header.js"></script>

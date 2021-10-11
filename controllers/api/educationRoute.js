@@ -11,14 +11,14 @@ router.post("/", async (req, res) => {
   console.log("req body there", req.body);
   try {
     //get the id, input value
-    const newHeader = await Header.create({
+    const newEducation = await Education.create({
       degree: req.body.userDesiredDegreeInput,
       schoolName: req.body.userInstituteInput,
       location: req.body.userLocationInput,
       startDate: req.body.userEdStartDateInput,
       graduateData: req.body.userEdEndDateInput,
     });
-    res.status(200).json(newHeader);
+    res.status(200).json(newEducation);
   } catch (err) {
     res.status(400).json(err);
   }
