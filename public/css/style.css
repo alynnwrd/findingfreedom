@@ -23,3 +23,85 @@ body {
   background: rgb(113, 158, 45);
   border-radius: 1.1rem;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+.navigation-link {
+  border: 2px solid transparent;
+}
+.navigation-link:hover {
+  text-decoration: node;
+  border-bottom: 2px solid #2be6f3;
+  transition: 0.5s ease;
+}
+
+#about {
+  background: rgb(113, 158, 45);
+  border-radius: 1.1rem;
+}
+
+/*@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+* {
+  margin: 0;
+  padding: 0;
+}*/
+
+/*body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #404040;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: .4px;
+  background: #eee;
+  padding: 0px;
+  margin:0;
+}*/
+
+.card {
+  position:absolute;
+  width: auto;
+  height:auto;
+  top: calc(50% - 240px);
+  left: calc(50% - 160px);
+}
+
+form {
+  position: absolute;
+  text-align: left;
+  background: #fff;
+  width: 340px;
+  height: 480px;
+  border-radius: 20px;
+  padding: 30px 10px 0 20px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.button{
+  border:1px solid black;
+  
+}
+
+button:hover {
+  background: #fff;
+  color: #3b5998;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #ffc185;
+  width: 85%;
+  font-family: 'Roboto';
+  color: #ff7d00;
+  text-align: center;
+  font-size: 21px;
+  font-weight:100;
+  margin-bottom:25px;
+}
+
+
