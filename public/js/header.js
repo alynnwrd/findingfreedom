@@ -10,7 +10,7 @@ reviewForm.addEventListener("click", (e) => {
   const userCityInput = document.getElementById("userCity").value;
   const userStateInput = document.getElementById("userState").value;
   const userZipInput = document.getElementById("userZip").value;
-  console.log("firstname", userFirstNameInput);
+  console.log("firstName", userFirstNameInput);
   fetch("/api/header", {
     method: "POST",
     headers: {
@@ -37,6 +37,9 @@ reviewForm.addEventListener("click", (e) => {
       console.error("Error in POST request:", error);
     });
 });
+function education() {
+  document.location.href='/api/education';
+  }
 
 
 
