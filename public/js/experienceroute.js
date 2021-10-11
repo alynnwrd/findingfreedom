@@ -5,7 +5,6 @@ reviewForm.addEventListener("submit", (e) => {
         const userJobTitleInput = document.getElementById('userJobTitle').value;
         const userEmployerInput = document.getElementById('userEmployer').value;
         const userStartDateInput = document.getElementById('userStartDate').value;
-        const userStartDateInput = document.getElementById('userEdStartDate').value;
         const userEndDateInput = document.getElementById('userEndDate').value;
         const userGoodContactInput = document.getElementById('userGoodContact').value;
     fetch("/api/experience", {
