@@ -23,7 +23,49 @@ body {
   background: rgb(113, 158, 45);
   border-radius: 1.1rem;
 }
+<<<<<<< HEAD
 /*forms*/
+=======
+html {
+  scroll-behavior: smooth;
+}
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+.navigation-link {
+  border: 2px solid transparent;
+}
+.navigation-link:hover {
+  text-decoration: node;
+  border-bottom: 2px solid #2be6f3;
+  transition: 0.5s ease;
+}
+
+#about {
+  background: rgb(113, 158, 45);
+  border-radius: 1.1rem;
+}
+
+/*@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+* {
+  margin: 0;
+  padding: 0;
+}*/
+
+/*body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #404040;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: .4px;
+  background: #eee;
+  padding: 0px;
+  margin:0;
+}*/
+
+>>>>>>> 8b99faf5be67d9a0c4eec78796cabdb7b4202d0b
 .card {
   position:absolute;
   width: auto;
@@ -31,6 +73,10 @@ body {
   top: calc(50% - 240px);
   left: calc(50% - 160px);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b99faf5be67d9a0c4eec78796cabdb7b4202d0b
 form {
   position: absolute;
   text-align: left;
@@ -42,6 +88,7 @@ form {
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 .button{
   border:1px solid black;
 }
@@ -55,11 +102,31 @@ input {
   width: 85%;
   font-family: 'Roboto';
   color: #FF7D00;
+=======
+
+.button{
+  border:1px solid black;
+  
+}
+
+button:hover {
+  background: #fff;
+  color: #3b5998;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #ffc185;
+  width: 85%;
+  font-family: 'Roboto';
+  color: #ff7d00;
+>>>>>>> 8b99faf5be67d9a0c4eec78796cabdb7b4202d0b
   text-align: center;
   font-size: 21px;
   font-weight:100;
   margin-bottom:25px;
 }
+<<<<<<< HEAD
 #login{
   width: 60vh;
   height: 60vh;
@@ -181,4 +248,7 @@ span {
   font-size: 13px;
   margin-top: 8px;
 }
+=======
+
+>>>>>>> 8b99faf5be67d9a0c4eec78796cabdb7b4202d0b
 

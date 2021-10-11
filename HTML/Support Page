@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public\img\support.jpg">
+    <title>Support Is Available</title>
+</head>
+<body>
+    
+<div>
+    <h1>Everyone Needs Some Help Growing...</h1> 
+    <img id=supportPic src="CSS\Images\support.jpg" alt="wooden carved arm supporting a tree growing at sharp angle">
+</div>
+
+<div>
+    <h2>"The future depends on what you do today."</h2>
+    <h4>Mahatma Gandi</h4>
+    <p>Below you will find several resources that can help with getting you started on writing this new chapter of you life. We're all with you!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+</div>
+<section>
+    <h3>Finding a Job</h3>
+        <ul>
+            <li> <a href="https://www.prisonfellowship.org/resources/support-friends-family-of-prisoners/supporting-successful-prisoner-reentry/how-to-find-a-job-after-prison/">How To Find A Job After Prison from Prison Fellowship</a> </li>
+            <li> <a href="https://www.prisonfellowship.org/resources/support-friends-family-of-prisoners/supporting-successful-prisoner-reentry/how-to-find-a-job-after-prison/">Employment Information Handbook for Ex-offenders from the US Department of Labor</a> </li>
+            <li> <a href="https://www.monster.com/career-advice/article/resume-dilemma-criminal-record">Resume Dilema: Criminal Record from Monster</a> </li> 
+        </ul>
+        <p id=applyingAdvice>Apply everywhere possible and don't forget to follow-up!</p>
+        <ul>
+            <li> <a href="https://www.monster.com/">Monster</a> </li>
+            <li> <a href="https://www.indeed.com/">Indeed</a> </li> 
+            <li> <a href="https://www.ziprecruiter.com/">ZipRecruiter</a> </li>
+        </ul>
+</section>
+<section>
+    <h3>Finding a Home</h3>
+        <ul>
+            <li> <a href="https://www.careeronestop.org/ExOffender/default.aspx">CareerOneStop for Ex-Offenders</a> </li>
+            <li> <a href="https://www.recordgone.com/articles/reentry-programs-for-minnesota-ex-offenders.htm">Reentry Programs For Ex-Offenders In Minnesota</a> </li>
+            <li> <a href="https://mn.gov/doc/assets/Housing_Resources-MN_American_Indian_Transition_Resource_Directory_tcm1089-276284.pdf">Housing Resources from the Minnesota State Government</a> </li>
+            <li> <a href="https://www.prisonfellowship.org/resources/training-resources/reentry-ministry/on-going-ministry/helping-ex-prisoners-find-housing/">Helping Ex-prisoners Find Housing from Prison Fellowship</a> </li>
+            <li> <a href="https://www.ojp.gov/pdffiles1/203374.pdf">Guide For Developing Housing For Ex-Offenders from the US Department of Justice</a></li>
+        </ul>
+</section>
+<section>
+    <h3>Continuing Education</h3>
+        <ul>
+            <li> <a href="https://freegrantsforfelons.org/grants-and-scholarships-for-felons-going-back-to-college/">Grants and Scholarships for Felons Going Back to College</a> </li>
+            <li> <a href="https://lendedu.com/blog/scholarships-for-felons/">Financial Aid and Scholarships for Felons from LendEDU</a> </li>
+            <li> <a href="https://www.affordablecollegesonline.org/college-resource-center/college-after-prison/">Colleges and Degrees for Felons from Affordable Colleges</a> </li>
+        </ul>
+</section>
+<div>
+    <h3>Substance Abuse and Mental Health Support</h3>
+    <ul>
+        <li> <a href="https://www.prisonfellowship.org/resources/training-resources/reentry-ministry/on-going-ministry/encouraging-a-life-of-sobriety/">Encouraging a Life of Sobriety from Prison Fellowship</a> </li>
+        <li> <a href="https://www.samhsa.gov/find-help/national-helpline"> Substance Abuse and Mental Health Services Administration Hotline</a> </li>
+        <li> <a href="https://www.nami.org/Your-Journey/Individuals-with-Mental-Illness/Reentry-After-a-Period-of-Incarceration">Reentry After a Period of Incarceration from the National Alliance on Mental Illness</a> </li>
+        <li> <a href="https://www.wellnessrecoveryactionplan.com/wrap-is-helping-ex-offenders-find-new-lives-in-the-community/">Helping Ex-Offenders Find New Lives in the Community through Wellness Recovery Action Plan or WRAP</a> </li>
+    </ul>
+</div>
+</body>
+</html>

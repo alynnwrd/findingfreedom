@@ -1,52 +1,60 @@
-<div class="container" id="experience">
-  <form class="pure-form pure-form-aligned page2">
-    <fieldset>
-      <div class="pure-control-group">
-        <label for="job-title">Job Title</label>
-        <input type="text" id="userJobTitle" placeholder="job title" />
-      </div>
+   <div class="container">
+    <div class="row">
+    <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2">
+    <div class="card" id="card-2 experience" data-id='2'>
+        <form class="pure-form pure-form-aligned page2">
+          <fieldset>
+            <div class="pure-control-group">
+              <label for="job-title">Job Title</label>
+              <input type="text" id="userJobTitle" placeholder="Job Title" />
+            </div>
+      
+            <div class="pure-control-group">
+              <label for="Employer">Employer</label>
+              <input type="text" id="userEmployer" placeholder="Employer" />
+            </div>
 
-      <div class="pure-control-group">
-        <label for="Employer">Employer</label>
-        <input type="text" id="userEmployer" placeholder="Employer" />
-      </div>
-      <div class="pure-control-group">
-        <label for="Employer">city</label>
-        <input type="text" id="userCity" placeholder="City" />
-      </div>
+            <div class="pure-control-group">
+              <label for="Employer">City</label>
+              <input type="text" id="userCity" placeholder="City" />
+            </div>
+      
+            <div class="pure-control-group">
+              <label for="Employer">State</label>
+              <input type="text" id="userState" placeholder="State" />
+            </div>
 
-      <div class="pure-control-group">
-        <label for="Employer">state</label>
-        <input type="text" id="userState" placeholder="State" />
-      </div>
-      <div class="pure-control-group">
-        <label for="startDate">Start Date</label>
-        <input type="text" id="userStartDate" placeholder="start date" />
-      </div>
-
-      <!-- <div class="pure-controls">
-            <label for="aligned-cb" class="pure-checkbox">
-                <input type="checkbox" id="userCurrentEmployer" /> Is this your current employer? 
-            </label>
-        </div>-->
-
-      <div class="pure-control-group">
-        <label for="endDate">End Date </label>
-        <input
-          type="text"
-          id="userEndDate"
-          placeholder="end date if applicable"
-        />
-      </div>
-
-      <!-- <div class="pure-control-group">
-            <label for="aligned-cb" class="pure-checkbox">
-                <input type="checkbox" id="userGoodContact" /> Would this company be a good reference?
-            </label>
-        </div> -->
-      <button class="ui button" type="submit" id="experience">Submit</button>
-
-    </fieldset>
-  </form>
-</div>
+            <div class="pure-control-group">
+              <label for="startDate">Start Date</label>
+              <input type="text" id="userStartDate" placeholder="Start date" />
+            </div>
+      
+            <!-- <div class="pure-controls">
+                  <label for="aligned-cb" class="pure-checkbox">
+                      <input type="checkbox" id="userCurrentEmployer" /> Is this your current employer? 
+                  </label>
+              </div>-->
+      
+            <div class="pure-control-group">
+              <label for="endDate">End Date </label>
+              <input
+                type="text"
+                id="userEndDate"
+                placeholder="End date if applicable"
+              />
+            </div>
+      
+            <!-- <div class="pure-control-group">
+                  <label for="aligned-cb" class="pure-checkbox">
+                      <input type="checkbox" id="userGoodContact" /> Would this company be a good reference?
+                  </label>
+              </div> --> 
+              <div><button type="submit" onsubmit="showScreen('card-3')" class="pure-button pure-button-primary">Next</button></div>
+      
+          </fieldset>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
 <script src="/js/experience.js"></script>

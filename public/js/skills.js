@@ -13,8 +13,13 @@ fetch("/api/skills", {
         "Content-Type": "application/json",
         },
     body: JSON.stringify({
+<<<<<<< HEAD:public/js/skills.js
         userSkillsInput
         skillDescriptionInput
+=======
+        userProfessionalSkillsInput, 
+        userPersonalSkillsInput, 
+>>>>>>> 8b99faf5be67d9a0c4eec78796cabdb7b4202d0b:public/js/skillsroute.js
     }),
 })
         
