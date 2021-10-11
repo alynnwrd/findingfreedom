@@ -1,42 +1,46 @@
 <header> hi </header>
-<div class = "container" id= "header">
+<div class="container" id="header">
   <form class="pure-form pure-form-aligned page1">
     <fieldset>
       <div class="pure-control-group">
-        <label for="first-name"> {{userData.firsName}} </label>
+        <label for="first-name"></label>
         <input type="text" id="userFirst" placeholder="First Name" />
       </div>
       <div class="pure-control-group">
-        <label for="last-name">{{userData.lastName}}</label>
+        <label for="last-name"></label>
         <input type="text" id="userLast" placeholder="Last Name" />
       </div>
-        <div class="pure-control-group">
-            <label for="email">{{userData.email}}</label>
-            <input type="email" id="userEmail" placeholder="Email Address" />
+      <div class="pure-control-group">
+        <label for="email"></label>
+        <input type="email" id="userEmail" placeholder="Email Address" />
       </div>
       <div class="pure-control-group">
-            <label for="phone-number">{{userData.phone}}</label>
-            <input type="text" id="userPhone" placeholder="(000-000-0000)" />
+        <label for="phone-number"></label>
+        <input type="text" id="userPhone" placeholder="(000-000-0000)" />
       </div>
       <div class="pure-control-group">
-        <label for="address">{{userData.Address}}</label>
+        <label for="address"></label>
         <input type="text" id="userAddress" placeholder="Street Address" />
-    </div>
+      </div>
       <div class="pure-control-group">
-        <label for="multi-city">{{userData.City}}</label>
+        <label for="multi-city"></label>
         <input type="text" id="userCity" placeholder="City" />
-    </div>
-    <div class="pure-control-group">
-        <label for="state">{{userData.State}}</label>
-        <input type="text" id="userState" placeholder="state">
-    </div>
-    <div class="pure-control-group">
-        <label for="zip">{{userData.zipCode}}</label>
+      </div>
+      <div class="pure-control-group">
+        <label for="state"></label>
+        <input type="text" id="userState" placeholder="state" />
+      </div>
+      <div class="pure-control-group">
+        <label for="zip"></label>
         <input type="text" id="userZip" placeholder="Zip Code" />
-    
-    <button type="submit" id= "next-btn" class="pure-button pure-button-primary next-btn">Submit</button>
-    </div>
-  </fieldset>
-</form>
 
+        <button
+          type="submit"
+          id="review"
+          class="pure-button pure-button-primary next-btn"
+        >Submit</button>
+      </div>
+    </fieldset>
+  </form>
 </div>
+<script src="/js/headerroutes.js"></script>

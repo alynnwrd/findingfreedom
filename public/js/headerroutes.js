@@ -1,6 +1,6 @@
 const reviewForm = document.getElementById("review");
 
-reviewForm.addEventListener("submit", (e) => {
+reviewForm.addEventListener("click", (e) => {
   e.preventDefault();
   const userFirstNameInput = document.getElementById("userFirst").value;
   const userLastNameInput = document.getElementById("userLast").value;

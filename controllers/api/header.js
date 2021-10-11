@@ -5,9 +5,9 @@ router.get("/", async (req, res) => {
   //find method
   res.render("header");
 });
+
 //post
 router.post("/", async (req, res) => {
-  console.log("req body there", req.body);
   try {
     const newHeader = await Header.create({
       firstName: req.body.userFirstNameInput,
@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
       phone: req.body.userPhoneInput,
       email: req.body.userEmailInput,
     });
-    res.status(200).json(newHeader);
+    res.redirect("/education");
   } catch (err) {
     res.status(400).json(err);
   }
