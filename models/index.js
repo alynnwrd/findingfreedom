@@ -6,7 +6,6 @@ const Skills = require('./skills')
 //const bcrypt = require('bcrypt');
 
 //create association
-
 SELECT *
 FROM Header,
 LEFT JOIN User ON Header.id=User.id;
