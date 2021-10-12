@@ -31,7 +31,12 @@ reviewForm.addEventListener("click", (e) => {
     .then((data) => {
       console.log(data);
       console.log("Successful POST request:", data);
-      return data;
+      if (data) {
+        document.location.replace("/api/education");
+      } else {
+        alert("Failed to log in");
+      }
+    }
     })
     .catch((error) => {
       console.error("Error in POST request:", error);
