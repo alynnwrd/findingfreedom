@@ -3,7 +3,7 @@ const Experience = require("./Experience");
 const User = require("./User");
 const Education = require("./Education");
 const Skills = require("./Skills");
-//const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 //header
 User.hasMany(Header, {
   foreignKey: "user_id",
