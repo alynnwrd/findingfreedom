@@ -11,6 +11,14 @@ Skills.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references the `user` model, which we set in `User.js` as its `modelName` property
+        model: "user",
+        key: "id",
+      },
+    },
     personalSkills: {
       type: DataTypes.STRING,
       allowNull: false,
