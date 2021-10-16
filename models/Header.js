@@ -11,6 +11,14 @@ Header.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references the `user` model, which we set in `User.js` as its `modelName` property
+        model: "user",
+        key: "id",
+      },
+    },
     firstName: {
       type: DataTypes.STRING,
       allowNull: false,

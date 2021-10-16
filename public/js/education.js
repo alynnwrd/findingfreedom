@@ -1,6 +1,6 @@
 const reviewForm = document.getElementById("education-btn");
 
-reviewForm.addEventListener("click", (e) => {
+reviewForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const userDesiredDegreeInput =
     document.getElementById("userDesiredDegree").value;
