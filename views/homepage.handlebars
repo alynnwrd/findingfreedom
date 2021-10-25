@@ -13,8 +13,20 @@
           <a href="/signup" class="text-white navigation-link">Sign-Up</a>
         </div>
         <div class="col-3">
-          <a href="../public/html/support.html" class="text-white navigation-link">Support Resources</a>
+          <a
+            href="../public/html/support.html"
+            class="text-white navigation-link"
+          >Support Resources</a>
         </div>
+        {{#if logged_in}}
+          <div class="col-3">
+            <a
+              href=""
+              class="text-white navigation-link"
+              id="logout"
+            >Logout</a>
+          </div>
+        {{/if}}
       </div>
     </div>
   </div>
@@ -36,17 +48,23 @@
         Each year around 600,000 people transition out of prison. All of these
         people need work to support themselves, their families, to successfully
         integrate back into the community, and to avoid recidivism. However, the
-        unemployment rate for former inmates was over 27% in 2008 leaving it over five
-        times higher than the national average at the same time and also higher
-        than any other period in American history including during the Great
-        Depression. Factors such as gender and race also play a huge role in
-        this statistic. The overall percent of unemployment amongst formerly
-        incarcerated individuals is only expected to grow in the coming years.
-        Our goal with Finding Freedom is to provide a useful resume tool that will
-        provide former inmates with a professional resume along with some
-        helpful hints on the best practices that have been found to lead to job
-        procurement
+        unemployment rate for former inmates was over 27% in 2008 leaving it
+        over five times higher than the national average at the same time and
+        also higher than any other period in American history including during
+        the Great Depression. Factors such as gender and race also play a huge
+        role in this statistic. The overall percent of unemployment amongst
+        formerly incarcerated individuals is only expected to grow in the coming
+        years. Our goal with Finding Freedom is to provide a useful resume tool
+        that will provide former inmates with a professional resume along with
+        some helpful hints on the best practices that have been found to lead to
+        job procurement
       </p>
     </div>
   </div>
 </div>
+<footer>
+
+</footer>
+{{#if logged_in}}
+  <script src="/js/logout.js"></script>
+{{/if}}

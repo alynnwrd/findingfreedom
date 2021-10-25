@@ -1,25 +1,21 @@
+const skillForm = document.getElementById("skill-btn");
 
-const reviewForm = document.getElementById("skill-btn");
-
-reviewForm.addEventListener("submit", (e) => {
+skillForm.addEventListener("click", async function(e) {
     e.preventDefault();
     const userSkillsInput = document.getElementById('skill').value;
     const skillDescriptionInput = document.getElementById('skillDisc').value;
 
-            
+console.log('your skill:', userSkillsInput); 
+console.log('your skill:', skillDescriptionInput); 
+
 fetch("/api/skills", {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
         },
     body: JSON.stringify({
-<<<<<<< HEAD:public/js/skills.js
-        userSkillsInput
+        userSkillsInput,
         skillDescriptionInput
-=======
-        userProfessionalSkillsInput, 
-        userPersonalSkillsInput, 
->>>>>>> 8b99faf5be67d9a0c4eec78796cabdb7b4202d0b:public/js/skillsroute.js
     }),
 })
         
