@@ -20,14 +20,15 @@ router.get('/login', async (req, res) => {
   res.render('login');
 });
 
-router.post('/login', async (req, res) => {
+
+/*router.post('/login', async (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
 
   res.render('login');
-});
+});*/
 
 //sign-up page
 router.get("/signup", async (req, res) => {
@@ -39,7 +40,7 @@ router.post('/signup', async (req, res) => {
   console.log("===signing-up=====");
   try {
     const userData = await User.create({
-      userName: req.body.userName,
+      userName: req.body.newUserName,
       password: req.body.password
     });
     req.session.save(() => {
@@ -53,4 +54,15 @@ router.post('/signup', async (req, res) => {
     
   }
 })
+//logout
+router.post("/logout", (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
+});
+
 module.exports = router;

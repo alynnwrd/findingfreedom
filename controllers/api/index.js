@@ -5,7 +5,8 @@ const educationInfo = require("./educationRoute");
 const experienceInfo = require("./experienceRoute");
 const headerInfo = require("./headerRoute");
 const skillsInfo = require("./skillsRoute");
-const dhahsboardInfo =require('./dhashboard');
+const users = require("./userRoutes");
+//const dashBoardInfo = require('./dashboard');
 
 //routes!
 //education,
@@ -16,7 +17,12 @@ router.use("/experience", experienceInfo);
 router.use("/header", headerInfo);
 //skills
 router.use("/skills", skillsInfo);
+//users
+router.use("/skills", users);
 
-router.use("/dashboard", educationInfo);
+
+//router.use("/dashboard", dashBoardInfo);
+
+
 
 module.exports = router;

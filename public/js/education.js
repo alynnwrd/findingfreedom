@@ -1,6 +1,6 @@
-const reviewForm = document.getElementById("education-btn");
+const educationForm = document.getElementById("educationBtn");
 
-reviewForm.addEventListener("submit", (e) => {
+educationForm.addEventListener("click", async function(e) {
   e.preventDefault();
   const userDesiredDegreeInput =
     document.getElementById("userDesiredDegree").value;
@@ -34,3 +34,6 @@ reviewForm.addEventListener("submit", (e) => {
       console.error("Error in POST request:", error);
     });
 });
+/*function experience() {
+  document.location.href = "/api/experience";
+}*/
