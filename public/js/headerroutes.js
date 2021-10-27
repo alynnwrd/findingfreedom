@@ -43,13 +43,13 @@ header.addEventListener("click", async function (e) {
     .then((data) => {
       console.log(data);
       console.log("Successful POST request:", data);
-      return data;
+      return education();
+      
     })
     .catch((error) => {
       console.log("Error in POST request:", error);
     });
 });
-
-/*function education() {
+function education() {
   document.location.href = "/api/education";
-}*/
+}

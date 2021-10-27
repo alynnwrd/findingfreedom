@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
 });
 //post
 router.post("/", async (req, res) => {
-  console.log("req body there", req.body);
+  console.log("line 12", req.body);
   try {
     //get the id, input value
     //check the table row names

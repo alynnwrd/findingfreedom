@@ -19,7 +19,8 @@ router.post("/", async (req, res) => {
       phone: req.body.userPhoneInput,
       email: req.body.userEmailInput,
     });
-    res.redirect("/education", newHeader);
+    console.log('line:22', newHeader);
+    res.status(200).json(newHeader);
   } catch (err) {
     res.status(400).json(err);
   }

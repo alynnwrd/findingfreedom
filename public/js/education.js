@@ -28,12 +28,12 @@ educationForm.addEventListener("click", async function(e) {
     .then((data) => {
       console.log(data);
       console.log("Successful POST request:", data);
-      return data;
+      return experience();
     })
     .catch((error) => {
       console.error("Error in POST request:", error);
     });
 });
-/*function experience() {
+function experience() {
   document.location.href = "/api/experience";
-}*/
+}

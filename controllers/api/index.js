@@ -18,7 +18,7 @@ router.use("/header", headerInfo);
 //skills
 router.use("/skills", skillsInfo);
 //users
-router.use("/skills", users);
+router.use("/users", users);
 
 
 //router.use("/dashboard", dashBoardInfo);

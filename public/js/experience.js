@@ -27,12 +27,12 @@ experienceForm.addEventListener("click", async function(e) {
     .then((data) => {
       console.log(data);
       console.log("Successful POST request:", data);
-      return data;
+      return skills();
     })
     .catch((error) => {
       console.error("Error in POST request:", error);
     });
 });
-/*function skills() {
+function skills() {
   document.location.href = "/api/skills";
-}*/
+}
