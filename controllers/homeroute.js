@@ -12,7 +12,10 @@ router.get('/', withAuth, async (req, res) => {
 
 //login
 router.get('/login', async (req, res) => {
+  console.log('line:15', req.session);
+
   if (req.session.logged_in) {
+    console.log(req.body);
     res.redirect('/');
     return;
   }

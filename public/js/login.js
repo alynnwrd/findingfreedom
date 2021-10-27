@@ -4,14 +4,15 @@ logInBtn.addEventListener("click", async function (event) {
   event.preventDefault();
   console.log("test");
 
-  const email = document.querySelector("#username").value.trim();
+  const userName = document.querySelector("#username").value.trim();
   const password = document.querySelector("#password").value.trim();
-
-  if (email && password) {
+console.log(userName, password);
+  if (userName && password) {
     //problem
-    const response = await fetch("api/users/login", {
+    console.log(userName, password);
+    const response = await fetch("/api/users/login", {
       method: "POST",
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ userName, password }),
       headers: { "Content-Type": "application/json" },
     });
 

@@ -5,7 +5,7 @@ const Education = require("./Education");
 const Skills = require("./Skills");
 const bcrypt = require('bcrypt');
 //header
-/*User.hasMany(Header, {
+User.hasMany(Header, {
   foreignKey: "user_id",
   onDelete: "CASCADE",
 });
@@ -42,6 +42,6 @@ User.hasMany(Skills, {
 
 Skills.belongsTo(User, {
   foreignKey: "user_id",
-});*/
+});
 
 module.exports = { Header, User, Experience, Education, Skills };
