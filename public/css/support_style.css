@@ -1,40 +1,50 @@
 h1 {
     text-align: center;
-    color: #0A2239;
+    color: #3A3042;
 }
 
 h2 {
     text-align: center;
-    color:#F19A3E;
+    color:#FF784F;
 }
 
 h3 {
     text-align:center;
-    background-color: #0A2239;
-    color: #D0EFB1;
+    background-color: #3A3042;
+    color: #B0FF92;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 h4 {
     text-align: center;
-    color:#F19A3E
+    color:#FF784F
 }
 
 a {
-    color: #58A4B0
+    color: #30C5FF;
+}
+
+li {
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 a:hover {
-    background-color:#F19A3E;
-    color: white;
+    background-color:#FF784F;
+    text-emphasis-color: white;
 }
 
 p {
     font-size: large;
     font-weight: bold;
+    margin-left: 7%;
+    margin-right: 7%;
+    M
 }
 
-img {
-    max-width:50%;
-    align: center;
+# supportPic {
+    max-width: 50%;
+    margin-left: 25%;
 }
 
