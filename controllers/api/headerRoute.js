@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const { Header } = require("../../models");
+const withAuth = require("../../utils/auth");
 
-router.get("/", async (req, res) => {
+router.get("/",  withAuth, async (req, res) => {
   //find method
-  res.render("header");
+  res.render("header", { logged_in: req.session.logged_in });
 });
 
 //post
@@ -19,7 +20,8 @@ router.post("/", async (req, res) => {
       phone: req.body.userPhoneInput,
       email: req.body.userEmailInput,
     });
-    res.redirect("/education", newHeader);
+    console.log('line:22', newHeader);
+    res.status(200).json(newHeader);
   } catch (err) {
     res.status(400).json(err);
   }

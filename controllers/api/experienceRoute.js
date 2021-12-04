@@ -1,25 +1,25 @@
 const router = require("express").Router();
 const { Experience } = require("../../models");
-
-router.get("/", async (req, res) => {
+const withAuth = require("../../utils/auth");
+router.get("/", withAuth, async (req, res) => {
   //post something
   //login auth
 
-  res.render("experience");
+  res.render("experience", { logged_in: req.session.logged_in });
 });
 //post
 router.post("/", async (req, res) => {
-  console.log("req body there", req.body);
+  console.log("line:12", req.body);
   try {
     //get the id, input value
     //check the table row names
     const newExperience = await Experience.create({
-        jobTitle : req.body.userJobTitleInput,
-        employer: req.body.userEmployerInput,
-        city: req.body.userCityInput,
-        state: req.body.userStateInput,
-        startDate: req.body.userStartDateInput,
-        endDate: req.body.userEndDateInput,
+      jobTitle: req.body.userJobTitleInput,
+      employer: req.body.userEmployerInput,
+      city: req.body.userCityInput,
+      state: req.body.userStateInput,
+      startDate: req.body.userStartDateInput,
+      endDate: req.body.userEndDateInput,
     });
     res.status(200).json(newExperience);
   } catch (err) {
@@ -28,4 +28,3 @@ router.post("/", async (req, res) => {
 });
 
 module.exports = router;
-

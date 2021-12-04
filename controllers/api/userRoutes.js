@@ -6,14 +6,16 @@ router.post("/login", async (req, res) => {
     const userLogin = await User.findOne({ where: { userName: req.body.userName } });
 
     if (!userLogin) {
+
+      console.log('line:6', userLogin);
       res
         .status(400)
-        .json({ message: "Incorrect email or password, please try again" });
+        .json({ message: "Incorrect userName or password, please try again" });
       return;
     }
 
-    const validPassword = await userData.checkPassword(req.body.password);
-
+    console.log('line:17', req.body.userName);
+    const validPassword = await userLogin.checkPassword(req.body.password);
     if (!validPassword) {
       res
         .status(400)
@@ -22,27 +24,21 @@ router.post("/login", async (req, res) => {
     }
 
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.user_id = userLogin.id;
       req.session.logged_in = true;
 
-      res.json({ user: userData, message: "You are now logged in!" });
+      res.json({ user: userLogin, message: "You are now logged in!" });
     });
   } catch (err) {
     res.status(400).json(err);
   }
 });
 
-router.post("/logout", (req, res) => {
-  if (req.session.logged_in) {
-    req.session.destroy(() => {
-      res.status(204).end();
-    });
-  } else {
-    res.status(404).end();
-  }
-});
 
-router.post('/signup', async (req, res) => {
+
+
+
+/*router.post('/signup', async (req, res) => {
   console.log("===signing-up=====");
   try {
     const userData = await User.create({
@@ -59,6 +55,6 @@ router.post('/signup', async (req, res) => {
     res.status(400).json(err);
     
   }
-})
+})*/
 
 module.exports = router;
