@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const { Header } = require("../../models");
+const withAuth = require("../../utils/auth");
 
-router.get("/", async (req, res) => {
+router.get("/",  withAuth, async (req, res) => {
   //find method
-  res.render("header");
+  res.render("header", { logged_in: req.session.logged_in });
 });
 
 //post

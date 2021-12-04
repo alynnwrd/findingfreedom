@@ -1,10 +1,10 @@
 const router = require("express").Router();
 const { Education } = require("../../models");
-
-router.get("/", async (req, res) => {
+const withAuth = require("../../utils/auth");
+router.get("/", withAuth, async (req, res) => {
   //post something
   //auth
-  res.render("education");
+  res.render("education", { logged_in: req.session.logged_in });
 });
 //post
 router.post("/", async (req, res) => {

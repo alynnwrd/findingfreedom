@@ -9,6 +9,10 @@
   * [Tests](#Tests)
   * [Contributions](#Contributions)
   * [Contact](#Contact)
+
+  ## Mock
+  ![mock!](Assets/findhelp.PNG)
+
   ## Installation
   Required dependencies to be installed for application functionality: npm i
   ## Usage
